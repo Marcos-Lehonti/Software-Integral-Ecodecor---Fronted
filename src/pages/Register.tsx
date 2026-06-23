@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import ecodecorIcon from "../assets/icon-ecodecor.png";
+
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
 
 export default function Register() {
@@ -53,7 +55,7 @@ export default function Register() {
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           alt="Your Company"
-          src="./src/assets/icon-ecodecor.png"
+          src={ecodecorIcon}
           className="mx-auto h-30 w-auto"
         />
         <h2 className="mt-10 text-center text-2xl font-bold tracking-tight text-white">

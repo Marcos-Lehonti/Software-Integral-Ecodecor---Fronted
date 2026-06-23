@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
+import ecodecorIcon from "../assets/icon-ecodecor.png";
 
 export default function DashboardLayout() {
 
@@ -35,7 +36,7 @@ export default function DashboardLayout() {
         <div className="flex items-center gap-3 px-4 py-5 border-b border-white/10 flex-shrink-0">
           <img
             className="h-20 w-20"
-            src="./src/assets/icon-ecodecor.png"
+            src={ecodecorIcon}
             alt="Your Company"
           />
           <span className="text-white text-sm font-medium">EcoDecor</span>
