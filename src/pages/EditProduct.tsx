@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
 
-const CATEGORIES = ["ecopaper", "practstone", "machiato"];
+const CATEGORIES = ["ecopaper", "practstone", "machiato", "insumo"];
 const UNITS = ["litros", "kilos", "bolsas", "baldes", "metros2", "unidades"];
 
 export default function EditProduct() {

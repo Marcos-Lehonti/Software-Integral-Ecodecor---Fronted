@@ -10,7 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@xyflow/react": "^12.11.0",
+    "chart.js": "^4.5.1",
+    "date-fns": "^4.4.0",
+    "lucide-react": "^1.17.0",
     "react": "^19.2.5",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.14.2"
   },

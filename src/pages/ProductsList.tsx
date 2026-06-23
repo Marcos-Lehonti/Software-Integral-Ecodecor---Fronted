@@ -30,6 +30,7 @@ const categoryColor: Record<string, string> = {
   ecopaper: "bg-green-500",
   practstone: "bg-blue-500",
   machiato: "bg-yellow-500",
+  insumo: "bg-purple-500",
 };
 
 export default function ProductsList() {

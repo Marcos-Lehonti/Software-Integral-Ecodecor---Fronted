@@ -8,6 +8,14 @@ import UsersList from "./pages/UserList";
 import CreateProduct from "./pages/CreateProduct";
 import ProductsList from "./pages/ProductsList";
 import EditProduct from "./pages/EditProduct";
+import CreateQuotation from "./pages/CreateQuotation";
+import QuotationsList from "./pages/QuotationsList";
+import SendQuotationsList from "./pages/SendQuotationsList";
+import InventoryMovementsList from "./pages/Inventorymovementslist";
+import WarehouseTransfer from "./pages/WarehouseTransfer";
+import MaterialPreparation from "./pages/MaterialPreparation";
+import ChatInventario from "./pages/ChatInventario";
+import ProjectsTimeline from "./pages/ProjectsTimeline";
 import "./index.css";
 import type { ReactNode } from "react";
 
@@ -31,6 +39,17 @@ function App() {
           <Route path="/products" element={<ProductsList />} />
           <Route path="/products/create" element={<CreateProduct />} />
           <Route path="/products/:id/edit" element={<EditProduct />} />
+          <Route path="/quotations/create" element={<CreateQuotation />} />
+          <Route path="/quotations/list" element={<QuotationsList />} />
+          <Route path="/quotations/sendemail" element={<SendQuotationsList />} />
+          <Route path="/inventory/movements" element={<InventoryMovementsList />} />
+          <Route path="/inventory/transfer" element={<WarehouseTransfer />} />
+          <Route path="/inventory/preparation" element={<MaterialPreparation />} />
+          <Route path="/projects" element={<ProjectsTimeline />} />
+          <Route path="/ai/chat" element={<ChatInventario />} />
+
+
+
 
           {/* ✅ Solo administrador */}
           <Route path="/users-list" element={
