@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+const API_URL = "https://software-integral-ecodecor-backend.onrender.com";
 
 interface User {
   id: number;

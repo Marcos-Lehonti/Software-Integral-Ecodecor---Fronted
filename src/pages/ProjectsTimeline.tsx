@@ -12,7 +12,7 @@ import {
 import type { Node, Edge } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+const API_URL = "https://software-integral-ecodecor-backend.onrender.com";
 
 interface Movement {
   id: number;
@@ -518,7 +518,7 @@ function GraphLayout() {
 // import { es } from "date-fns/locale";
 // import { Package, ArrowRightLeft, CheckCircle2, ChevronDown, ChevronRight, FileText, User, Calendar, PlusCircle, LogIn, LogOut } from "lucide-react";
 
-// const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+// const API_URL = "https://software-integral-ecodecor-backend.onrender.com";
 
 // interface Movement {
 //   id: number;

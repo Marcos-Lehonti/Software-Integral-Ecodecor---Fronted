@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+const API_URL = "https://software-integral-ecodecor-backend.onrender.com";
 
 const SUGGESTIONS = [
   "¿Cuántas cotizaciones hay pendientes?",
