@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
-import { es } from "date-fns/locale";
+// import { es } from "date-fns/locale";
 import { 
   ArrowRightLeft, CheckCircle2, FileText, 
-  PlusCircle, LayoutGrid, Network, ArrowLeft
+  PlusCircle, Network, ArrowLeft
 } from "lucide-react";
 import { 
   ReactFlow, Background, Controls, Handle, Position, 
   useNodesState, useEdgesState, ReactFlowProvider
 } from '@xyflow/react';
+import type { Node, Edge } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
@@ -158,7 +159,7 @@ const FormNode = ({ data }: any) => {
   const [movWarehouse, setMovWarehouse] = useState("central");
   const [movType, setMovType] = useState("salida");
   const [movQuantity, setMovQuantity] = useState("");
-  const [movReason, setMovReason] = useState("");
+  const [movReason, ] = useState("");
 
   return (
     <div className="bg-white border-2 border-amber-200 p-4 rounded-xl shadow-lg w-[300px]">
@@ -271,8 +272,8 @@ function GraphLayout() {
   const [projectDetails, setProjectDetails] = useState<Project | null>(null);
   const [products, setProducts] = useState<ProductInfo[]>([]);
 
-  const [nodes, setNodes, onNodesChange] = useNodesState([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
 
   useEffect(() => {
     fetchProjects();

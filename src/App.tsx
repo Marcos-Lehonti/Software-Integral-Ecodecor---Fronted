@@ -13,7 +13,6 @@ import QuotationsList from "./pages/QuotationsList";
 import SendQuotationsList from "./pages/SendQuotationsList";
 import InventoryMovementsList from "./pages/Inventorymovementslist";
 import WarehouseTransfer from "./pages/WarehouseTransfer";
-import MaterialPreparation from "./pages/MaterialPreparation";
 import ChatInventario from "./pages/ChatInventario";
 import ProjectsTimeline from "./pages/ProjectsTimeline";
 import "./index.css";
@@ -44,7 +43,6 @@ function App() {
           <Route path="/quotations/sendemail" element={<SendQuotationsList />} />
           <Route path="/inventory/movements" element={<InventoryMovementsList />} />
           <Route path="/inventory/transfer" element={<WarehouseTransfer />} />
-          <Route path="/inventory/preparation" element={<MaterialPreparation />} />
           <Route path="/projects" element={<ProjectsTimeline />} />
           <Route path="/ai/chat" element={<ChatInventario />} />
 

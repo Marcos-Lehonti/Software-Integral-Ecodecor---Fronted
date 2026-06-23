@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import { Search, FlaskConical, Plus, Beaker, CheckCircle2, ClipboardList, Send, Info } from "lucide-react";
+import { Search, FlaskConical, Plus, Beaker, CheckCircle2, ClipboardList, Info } from "lucide-react";
 import { 
-  ReactFlow, Background, Controls, Handle, Position, 
+  ReactFlow, Background, Controls, 
   useNodesState, useEdgesState, ReactFlowProvider
 } from '@xyflow/react';
 import type { NodeProps, Node, Edge } from '@xyflow/react';
@@ -215,7 +215,7 @@ function GraphLayout() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
+  const [edges, , onEdgesChange] = useEdgesState<Edge>([]);
 
   // Setup de Preparación
   const [selectedWarehouse, setSelectedWarehouse] = useState<string>("central");
@@ -233,7 +233,7 @@ function GraphLayout() {
   const [selectedIngredientProduct, setSelectedIngredientProduct] = useState<Product | null>(null);
   const [ingredientQuantity, setIngredientQuantity] = useState<number>(1);
 
-  const [preparing, setPreparing] = useState(false);
+  const [, setPreparing] = useState(false);
 
   const fetchData = useCallback(async () => {
     setLoading(true);

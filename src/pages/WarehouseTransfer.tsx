@@ -106,7 +106,7 @@ function GraphLayout() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
+  const [edges, , onEdgesChange] = useEdgesState<Edge>([]);
 
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
