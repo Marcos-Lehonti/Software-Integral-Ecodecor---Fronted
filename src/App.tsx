@@ -15,6 +15,7 @@ import InventoryMovementsList from "./pages/Inventorymovementslist";
 import WarehouseTransfer from "./pages/WarehouseTransfer";
 import ChatInventario from "./pages/ChatInventario";
 import ProjectsTimeline from "./pages/ProjectsTimeline";
+import MaterialPreparation from "./pages/MaterialPreparation";
 import "./index.css";
 import type { ReactNode } from "react";
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/inventory/movements" element={<InventoryMovementsList />} />
           <Route path="/inventory/transfer" element={<WarehouseTransfer />} />
           <Route path="/projects" element={<ProjectsTimeline />} />
+          <Route path="/inventory/preparation" element={<MaterialPreparation />} />
           <Route path="/ai/chat" element={<ChatInventario />} />
 
 
